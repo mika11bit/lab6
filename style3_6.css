@@ -1,0 +1,246 @@
+body {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.block {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	width: 620px;
+	border: 20px solid #868686;
+	background-image: url(1618424289_15-funart_pro-p-oboi-fon-krutoi-fon-15.jpg);
+	padding: 0px 20px 20px 20px;
+	margin: 50px 0;
+}
+.content {
+	display: flex;
+	width: 100%;
+}
+.left,
+.left div {
+	float: left;
+}
+.right,
+.right div {
+	float: right;
+}
+
+/* ! налаштування інпутів */
+.inpContainer {
+	margin: 10px 0px 20px 0px !important;
+	float: left;
+}
+.inpContainer {
+	color: white !important;
+}
+.inp1::before {
+	content: 'Login';
+}
+.inp2::before {
+	content: 'Password';
+}
+.inp3::before {
+	content: 'First Name';
+}
+.inp4::before {
+	content: 'Email';
+}
+.inp5::before {
+	content: 'Repeat password';
+}
+.inp6::before {
+	content: 'Last Name';
+}
+.inp7::before {
+	content: 'About Me';
+}
+
+input {
+	display: block;
+	font-weight: 700;
+	text-indent: 20px;
+	border-radius: 10px;
+	width: 250px;
+	height: 30px;
+	opacity: 0.8;
+	background-color: #868686;
+}
+
+/*! налаштування хедеру */
+.header_content {
+	cursor: pointer;
+}
+
+.header:hover::after,
+.header:hover::before {
+	opacity: 0;
+}
+
+.header {
+	position: relative;
+}
+
+.header:hover .first {
+	display: none;
+	opacity: 0;
+}
+.header:hover .second {
+	display: block;
+	opacity: 1;
+}
+.header::before,
+.header::after {
+	background-color: #ff0000;
+	content: '';
+	height: 2px;
+	width: 30%;
+	transition: all 0.3s linear;
+}
+.header::before {
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
+.header::after {
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+
+.header:hover .header_text::after {
+	background-color: green !important;
+	height: 4px;
+	width: 80%;
+}
+
+.header_content::first-letter {
+	font-size: 50px;
+	color: pink;
+}
+
+/* ! налаштування тексту у хедері */
+.first {
+	display: block;
+	opacity: 1;
+}
+.second {
+	display: none;
+	opacity: 0;
+}
+.header_text {
+	text-align: center;
+	color: #7d21b3;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 20px;
+	font-style: italic;
+}
+.header_text::after {
+	background-color: #ff0000;
+	content: '';
+	display: inline-block;
+	height: 2px;
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20%;
+}
+
+.aboutme {
+	width: 99.5%;
+	font-weight: 700;
+	text-indent: 20px;
+	border-radius: 10px;
+	height: 46px;
+	opacity: 0.8;
+	background-color: #868686;
+	clear: both;
+	margin: 10px 0 20px 0px;
+	resize: none;
+	padding: 10px 0;
+}
+.aboutme::first-line {
+	color: red;
+}
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+.button {
+	width: 130px;
+	background-color: white;
+	height: 70px;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.reset {
+	border: 3px solid #c64a19;
+	color: #c64a19;
+}
+.ok {
+	border: 3px solid #0097a7;
+	color: #0097a7;
+}
+.ok:active::after {
+	content: url(check-solid.svg);
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-left: 1vw;
+}
+
+.reset:active::after {
+	content: url(xmark-solid.svg);
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-left: 1vw;
+}
+
+.style1:hover {
+	box-shadow: inset 0 -4px 0 #fbff00;
+}
+.style2:hover {
+	box-shadow: inset 0 -4px 0 #1eff00;
+}
+.style3:hover {
+	box-shadow: 0 0 10px 10px rgba(233, 27, 154, 0.6);
+}
+.reset:hover {
+	border: 3px solid #e64a19;
+	color: white;
+	background-color: #e64a19;
+	border-radius: 15px;
+}
+.ok:hover {
+	border: 3px solid #0097a7;
+	color: white;
+	background-color: #0097a7;
+	border-radius: 15px;
+}
+
+.style2:focus {
+	box-shadow: inset 0 -4px 0 #00ffea;
+}
+.ok:active {
+	border: 3px solid #ecfd00;
+	background-color: #014950;
+	border-radius: 25px;
+	position: relative;
+}
+.reset:active {
+	border: 3px solid #ecfd00;
+	background-color: #a02904;
+	border-radius: 25px;
+	position: relative;
+}

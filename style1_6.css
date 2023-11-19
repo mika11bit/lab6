@@ -1,0 +1,39 @@
+.block1 {
+	background: rgb(55, 216, 55);
+	height: 100px;
+	width: 200px;
+	border: 1px solid #000000;
+	position: absolute;
+	top: 100px;
+	left: 280px;
+	z-index: 1;
+}
+.row {
+	position: absolute;
+	top: 180px;
+	left: 105px;
+	display: flex;
+	flex-direction: row;
+	z-index: 2;
+}
+.text {
+	text-align: center;
+}
+.block2 {
+	color: white;
+	background: rgb(48, 119, 212);
+	height: 90px;
+	width: 250px;
+	border: 1px solid #000000;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 3vw;
+}
+.block3 {
+	background: rgb(59, 190, 190);
+	height: 90px;
+	width: 250px;
+	border: 1px solid #000000;
+	display: flex;
+	justify-content: space-around;
+}

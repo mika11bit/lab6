@@ -1,0 +1,81 @@
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(164, 164, 164);
+}
+.black-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+.black-block {
+	position: absolute;
+	background: black;
+	border: 1px solid black;
+
+	width: inherit;
+	height: inherit;
+	z-index: 2;
+
+	box-shadow: 0 5px 20px rgb(0, 0, 0, 0.7);
+}
+.item {
+	position: absolute;
+}
+/* ! temperature */
+.temp-container {
+	bottom: -75%;
+	right: -50%;
+}
+.temp-block {
+	position: relative;
+	width: 200px;
+	height: 100px;
+	background: rgb(193, 193, 193);
+	z-index: 1;
+	box-shadow: 5px 5px 0 rgb(142, 142, 142);
+}
+/* ! arrows */
+.arrows-container {
+	top: 30%;
+	left: -11%;
+	z-index: 3;
+}
+.arrows {
+	transform: scale(2);
+	color: black;
+	border: 1px solid rgb(192, 192, 192, 0.5);
+	background: rgb(192, 192, 192, 0.5);
+}
+.arrows i {
+	padding: 2px;
+}
+/* ! number */
+.number-container {
+	bottom: 2%;
+	left: 5%;
+	z-index: 3;
+}
+.number {
+	color: rgb(192, 192, 192, 0.5);
+	font-size: 70px;
+	font-family: 'Comic Sans MS';
+}
+
+/* ! sky */
+
+.sky-container {
+	top: 15%;
+	right: -30%;
+	z-index: 3;
+}
+.sky {
+	width: 180px;
+	height: 100px;
+	background-image: url(sky.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
